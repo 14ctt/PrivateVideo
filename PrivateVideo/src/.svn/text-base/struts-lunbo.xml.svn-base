@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts2-lunbo" extends="struts2">
+     <action name="lunboAction_*" class="LunboAction" method="{1}">
+         <result name="addLunbo">/testLunbo/lunboAdd.jsp</result>
+         <result name="delLunbo">/testLunbo/lunboSelect.jsp</result>
+     </action>
+	</package>
+</struts>    

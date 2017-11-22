@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-15 13:40:25 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+<class dynamic-insert="false" dynamic-update="false" mutable="true" name="entity.Orders" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="orders">
+        <id name="orderno" type="java.lang.Integer">
+            <column name="orderno"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="entity.Movies" embed-xml="true" fetch="select" insert="true" name="movies" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column name="mvid" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="entity.Rooms" embed-xml="true" fetch="select" insert="true" name="rooms" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column name="roomid" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="entity.Screenings" embed-xml="true" fetch="select" insert="true" name="screenings" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column name="scid" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="entity.Users" embed-xml="true" fetch="select" insert="true" name="users" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column name="userid" not-null="true"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="reconfirmtime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="reconfirmtime" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="cost" optimistic-lock="true" type="float" unique="false">
+            <column name="cost" not-null="true" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="scheduledtime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="scheduledtime" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

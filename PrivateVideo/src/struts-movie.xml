@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="struts2-movie" extends="struts2">
+     <action name="movieAction_*" class="movieaction" method="{1}">
+     	 <result name="isadd">testMovie/showAllMovie.jsp</result>
+     	 <result name="updatemovie">admin/movies-edit.jsp</result>     	 
+     	 <!--<result name="isupdate">testMovie/showAllMovie.jsp</result>
+     	 <result name="isdel">testMovie/showAllMovie.jsp</result>
+     	 -->
+     	 <result name="isdelmany">testMovie/showAllMovie.jsp</result>
+     </action>
+	</package>
+</struts>   

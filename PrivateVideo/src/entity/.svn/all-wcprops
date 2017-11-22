@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/GS15/!svn/ver/1315/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity
+END
+Lunbo.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/GS15/!svn/ver/817/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Lunbo.java
+END
+Rooms.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/GS15/!svn/ver/817/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Rooms.java
+END
+Screenings.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/GS15/!svn/ver/1229/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Screenings.java
+END
+Users.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/GS15/!svn/ver/927/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Users.java
+END
+Movies.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/GS15/!svn/ver/1315/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Movies.java
+END
+Orders.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/GS15/!svn/ver/1280/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Orders.hbm.xml
+END
+Lunbo.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/GS15/!svn/ver/1280/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Lunbo.hbm.xml
+END
+Rooms.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/GS15/!svn/ver/1280/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Rooms.hbm.xml
+END
+Screenings.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/GS15/!svn/ver/1280/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Screenings.hbm.xml
+END
+Types.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/GS15/!svn/ver/877/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Types.java
+END
+Users.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/GS15/!svn/ver/1280/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Users.hbm.xml
+END
+Movies.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/GS15/!svn/ver/1280/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Movies.hbm.xml
+END
+Types.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/GS15/!svn/ver/1280/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Types.hbm.xml
+END
+Orders.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/GS15/!svn/ver/1229/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/entity/Orders.java
+END

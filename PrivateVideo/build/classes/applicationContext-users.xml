@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<import resource="applicationContext.xml"/>
+	<bean id="studentService"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="target">
+			<bean class="service.UsersServlet">
+				<property name="entityDaoI" ref="entityDao" />
+			</bean>
+		</property>
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="update*">
+					PROPAGATION_SUPPORTS,ISOLATION_SERIALIZABLE
+				</prop>
+				<prop key="del*">
+					PROPAGATION_SUPPORTS,ISOLATION_SERIALIZABLE
+				</prop>
+				<prop key="add*">
+					PROPAGATION_SUPPORTS,ISOLATION_SERIALIZABLE
+				</prop>
+			</props>
+		</property>
+	</bean>
+	<bean name="UsersAction" class="controller.UsersAction">
+		<property name="usersServletImp" ref="studentService"/>
+		<property name="userr" ref="userr"></property>
+	</bean>
+	<bean name="userr" class="entity.Users" scope="prototype"/>
+</beans>

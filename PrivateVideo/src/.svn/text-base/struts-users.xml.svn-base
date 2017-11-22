@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts2-student" extends="struts2">
+     <action name="usersAction_*" class="UsersAction" method="{1}">
+         <!--<result name="delUsers">/testUser/userSelect.jsp</result>
+         <result name="addUsers">/testUser/userSelect.jsp</result>
+          <result name="updateUsers">/zhangbo/userSelect.jsp</result>更新用户信息 -->
+         
+         <result name="addselt">/zhangbo/usersMisted.jsp</result><!--模糊查询 -->
+         <result name="addsel">/admin/users-edit.jsp</result><!--主键查找某一个用户信息 -->
+         <!-- 电影 -->
+         <result name="voidSelt">/index.jsp</result>
+         <result name="voidSelect">/index.jsp</result>
+         <!-- 用户相关 -->
+        <result name="userinfo">/personalCenter/user_info.jsp</result>
+        <result name="orderinfo">/personalCenter/user_movieInfo.jsp</result>
+        <result name="changepwd">/login.jsp</result>
+        <result name="backUpdatePassword">/personalCenter/updatepwd.jsp</result>
+        <result name="voidXq">/mvxiangqing.jsp</result>
+         <result name="log">/login.jsp</result>
+         <result name="denglu">/index.jsp</result>
+         <!--用户登录和注册-->
+          <result name="addUsers">/login.jsp</result>
+            <result name="email">/login.jsp</result>
+     </action>
+	</package>
+</struts>    

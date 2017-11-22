@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-15 13:40:25 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+<class dynamic-insert="false" dynamic-update="false" mutable="true" name="entity.Screenings" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="screenings">
+        <id name="scid" type="java.lang.Integer">
+            <column name="scid"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="starttime" optimistic-lock="true" type="time" unique="false">
+            <column length="8" name="starttime" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="overtime" optimistic-lock="true" type="time" unique="false">
+            <column length="8" name="overtime" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="scdate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="scdate" not-null="true"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="orderses" optimistic-lock="true" sort="unsorted" table="orders">
+            <key on-delete="noaction">
+                <column name="scid" not-null="true"/>
+            </key>
+            <one-to-many class="entity.Orders" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>

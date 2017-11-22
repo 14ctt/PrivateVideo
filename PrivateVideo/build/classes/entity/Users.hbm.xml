@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-15 13:40:25 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+<class  dynamic-insert="false" dynamic-update="false" mutable="true" name="entity.Users" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="users">
+        <id name="userid" type="int">
+            <column name="userid"/>
+            <generator class="native"/>
+        </id>
+        <property generated="never" lazy="false" name="username" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="username" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="userpasswd" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="userpasswd"/>
+        </property>
+        <property generated="never" lazy="false" name="sex" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="sex" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="age" optimistic-lock="true" type="int" unique="false">
+            <column name="age" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="useremail" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="useremail" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="userimg" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="userimg" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="userphone" optimistic-lock="true" type="string" unique="false">
+            <column name="userphone" not-null="true" precision="10" scale="0"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="orderses" optimistic-lock="true" sort="unsorted" table="orders">
+            <key on-delete="noaction">
+                <column name="userid" not-null="true"/>
+            </key>
+            <one-to-many class="entity.Orders" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>

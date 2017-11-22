@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-15 13:40:25 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+<class  dynamic-insert="false" dynamic-update="false" mutable="true" name="entity.Rooms" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="rooms">
+        <id name="roomid" type="int">
+            <column name="roomid"/>
+            <generator class="native"/>
+        </id>
+        <property generated="never" lazy="false" name="roomname" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="roomname" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="roomdesc" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="roomdesc" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="roomtype" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="roomtype" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="roomprice" optimistic-lock="true" type="float" unique="false">
+            <column name="roomprice" not-null="true" precision="12" scale="0"/>
+        </property>
+        <one-to-one class="entity.Screenings" constrained="false" embed-xml="true" name="screenings"/>
+    </class>
+</hibernate-mapping>

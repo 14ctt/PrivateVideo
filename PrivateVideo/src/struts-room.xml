@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="struts2-room" extends="struts2">
+     <action name="roomAction_*" class="roomaction" method="{1}">
+     	<!-- <result name="isadd">testRoom/showAllRoom.jsp</result>
+     	 <result name="isupdate">testRoom/showAllRoom.jsp</result>
+     	 <result name="isdel">testRoom/showAllRoom.jsp</result>
+     	 <result name="isdelmany">testRoom/showAllRoom.jsp</result>-->
+     	  <result name="updateroom">admin/rooms-edit.jsp</result>
+     </action>
+	</package>
+</struts>   

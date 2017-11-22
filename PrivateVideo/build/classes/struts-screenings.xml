@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts2-screening" extends="struts2">
+		<action name="screeningAction_*" class="screeningAction" method="{1}">
+			<result type="redirect" name="getAllSuc">testScreening/selectAll.jsp</result>
+			<result type="redirect" name="addSuc">testScreening/selectAll.jsp</result>
+			<result type="redirect" name="updateSuc">testScreening/selectAll.jsp</result>
+			<result type="redirect" name="delectSuc">testScreening/selectAll.jsp</result>
+			<result name="input">testScreening/error.jsp</result>
+		</action>
+	</package>
+</struts>    

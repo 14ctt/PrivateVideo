@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/GS15/!svn/ver/1383/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src
+END
+struts-lunbo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/GS15/!svn/ver/1106/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/struts-lunbo.xml
+END
+struts-movie.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/GS15/!svn/ver/1106/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/struts-movie.xml
+END
+applicationContext-room.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/GS15/!svn/ver/817/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/applicationContext-room.xml
+END
+applicationContext-movie.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/GS15/!svn/ver/877/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/applicationContext-movie.xml
+END
+applicationContext-lunbo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/GS15/!svn/ver/1106/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/applicationContext-lunbo.xml
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/GS15/!svn/ver/1383/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/hibernate.cfg.xml
+END
+struts-orders.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/GS15/!svn/ver/1246/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/struts-orders.xml
+END
+struts-screenings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/GS15/!svn/ver/1246/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/struts-screenings.xml
+END
+struts-users.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/GS15/!svn/ver/1374/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/struts-users.xml
+END
+applicationContext-orders.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/GS15/!svn/ver/1246/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/applicationContext-orders.xml
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/GS15/!svn/ver/1382/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/struts.xml
+END
+applicationContext-screenings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/GS15/!svn/ver/1246/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/applicationContext-screenings.xml
+END
+applicationContext-users.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/GS15/!svn/ver/842/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/applicationContext-users.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/GS15/!svn/ver/817/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/applicationContext.xml
+END
+applicationContext-types.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/GS15/!svn/ver/817/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/applicationContext-types.xml
+END
+struts-room.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/GS15/!svn/ver/1106/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/struts-room.xml
+END
+struts-addtypes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/GS15/!svn/ver/1008/7%E7%BB%84/%E9%A1%B9%E7%9B%AE%E4%BA%8C/PrivateVideo/src/struts-addtypes.xml
+END

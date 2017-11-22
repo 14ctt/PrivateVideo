@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-15 13:40:25 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+<class dynamic-insert="false" dynamic-update="false" mutable="true" name="entity.Types" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="types">
+        <id name="typeid" type="int">
+            <column name="typeid"/>
+            <generator class="native"/>
+        </id>
+        <property generated="never" lazy="false" name="typename" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="typename" not-null="true"/>
+        </property>
+        <set embed-xml="true"  fetch="select" inverse="true" lazy="true" mutable="true" name="movieses" optimistic-lock="true" sort="unsorted" table="movies">
+            <key on-delete="noaction">
+                <column name="typeid" not-null="true"/>
+            </key>
+            <one-to-many class="entity.Movies" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>

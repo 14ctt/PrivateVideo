@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-15 13:40:25 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+<class dynamic-insert="false" dynamic-update="false" mutable="true" name="entity.Movies" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="movies">
+        <id name="mvid" type="int">
+            <column name="mvid"/>
+            <generator class="native"/>
+        </id>
+        
+        <many-to-one  class="entity.Types" embed-xml="true" fetch="select" insert="true" name="types" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column name="typeid" not-null="true"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="mvname" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="mvname" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="releasetime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="releasetime" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="mvtime" optimistic-lock="true" type="string" unique="false">
+            <column length="19" name="mvtime" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="mvdirector" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="mvdirector" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="mvlanguage" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="mvlanguage" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="mvintroduction" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="mvintroduction" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="mvimg" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="mvimg" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="mvactor" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="mvactor" not-null="true"/>
+        </property>
+        <set embed-xml="true" fetch="select"  inverse="true" lazy="true" mutable="true" name="screeningses" optimistic-lock="true" sort="unsorted" table="screenings">
+            <key on-delete="noaction" >
+                <column name="mvid"/>
+            </key>
+            <one-to-many class="entity.Screenings" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<include file="struts-admin.xml"/>
+	<include file="struts-orders.xml"/>
+	<include file="struts-screenings.xml"/>
+	<include file="struts-lunbo.xml"/>
+	<include file="struts-addtypes.xml"/>
+	<include file="struts-movie.xml"/>
+	<include file="struts-room.xml"/> 
+	<include file="struts-users.xml"/>
+	<package  name="struts2" extends="struts-default" namespace="/">
+		
+		<result-types>
+			<result-type name="chart" class="org.apache.struts2.dispatcher.ChartResult">
+				<param name="width">640</param>
+				<param name="height">480</param>
+			</result-type>
+		</result-types>
+		
+		
+		<interceptors>
+			<interceptor name="fileUpload" 
+				class="org.apache.struts2.interceptor.FileUploadInterceptor"/>
+		</interceptors>		
+		
+		<action name="uploadAction" class="controller.UploadAction">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="fileUpload">
+				<param name="allowedTypes">image/pjpeg,image/x-png,
+	       image/bmp,image/png,image/jpeg,image/gif</param>
+				<param name="maximumSize">3000 000</param>
+			</interceptor-ref>
+		</action>
+		
+		<action name="warning">
+			<result>/WEB-INF/erro.jsp</result><!-- 定义全局错误信息 -->
+		</action>
+		<action name="showChartAction" class="controller.ShowChartAction">
+			<result name="success" type="chart"></result>
+		</action>
+		
+		
+	</package>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devModel" value="true" />
+	<constant name="struts.multipart.saveDir" value="/tmp"/>
+</struts>    
